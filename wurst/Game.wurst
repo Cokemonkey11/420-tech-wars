@@ -1,4 +1,8 @@
-package Hello
+package Game
+
+import UnitsApi
 
 init
-    print("_")
+    for i = 0 to 7
+        if players[i].isIngame()
+            createUnit(players[i], ID_BUILDER, players[i].getStartLocation(), angle(0.))

@@ -4,6 +4,6 @@ dependencies:
 - https://github.com/wurstscript/WurstStdlib2
 - https://github.com/Cokemonkey11/WurstCommand
 buildMapData:
-  name: '420 Tech Wars 0.1.0'
-  fileName: '(8)420-tech-wars-0.1.0'
-  author: 'Frotty & Cokemonkey11'
+  name: 420 Tech Wars 0.1.0
+  fileName: (8)420-tech-wars-0.1.0
+  author: Frotty & Cokemonkey11

@@ -1,0 +1,26 @@
+package UnitsApi
+
+import ObjectIds
+import ObjectIdGenerator
+import UnitObjEditing
+
+
+public constant ID_BUILDER = compiletime(UNIT_ID_GEN.next())
+public constant ID_ARCHER  = compiletime(UNIT_ID_GEN.next())
+
+
+class Archer extends UnitDefinition
+    construct()
+        super(ID_ARCHER, 'hrif')
+        setRequirements("")
+
+class Builder extends UnitDefinition
+    construct()
+        super(ID_BUILDER, 'hpea')
+        setStructuresBuilt(commaList(ID_ARCHER))
+        setNormalAbilities("")
+
+
+@compiletime function gen()
+    new Archer()
+    new Builder()
